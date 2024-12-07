@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Performance Prediction</h1>
+        <form id="prediction-form">
+            <label for="study_hours">Study Hours:</label>
+            <input type="number" id="study_hours" name="study_hours" step="any" required>
+
+            <label for="extracrr_hours">Extra Curricular Hours:</label>
+            <input type="number" id="extracrr_hours" name="extracrr_hours" step="any" required>
+
+            <label for="sleep_hours">Sleep Hours:</label>
+            <input type="number" id="sleep_hours" name="sleep_hours" step="any" required>
+
+            <label for="social_hours">Social Hours:</label>
+            <input type="number" id="social_hours" name="social_hours" step="any" required>
+
+            <label for="phy_activity">Physical Activity Hours:</label>
+            <input type="number" id="phy_activity" name="phy_activity" step="any" required>
+
+            <label for="gpa">GPA:</label>
+            <input type="number" id="gpa" name="gpa" step="any" required>
+
+
+            <button type="submit">Predict</button>
+        </form>
+
+        <div id="result">
+            <p>Prediction: <span id="prediction-result"></span></p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
